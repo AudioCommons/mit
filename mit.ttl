@@ -1,0 +1,3557 @@
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix fo: <http://www.ivan-herman.net/foaf.rdf#>.
+@prefix wik: <http://wiki.musicbrainz.org/>.
+@prefix mit: <http://purl.org/ontology/mo/mit#>.
+@prefix ins: <http://purl.org/ontology/mo/instruments#>.
+
+<>
+    dc:creator
+       fo:me;
+    dc:date
+       "2007-04-04";
+    dcterms:issued
+       "2007-03-04";
+    dcterms:modified
+       "2007-04-04";
+    a    skos:ConceptScheme;
+    rdfs:comment
+        "This is a SKOS version of the Instrument Taxonomy developed by MusicBrainz",
+        "Version 0.1";
+    rdfs:seeAlso
+        wik:AdvancedInstrumentTree,
+        <http://wiki.musicbrainz.org/AdvancedInstrumentTree?action=AttachFile&do=get&target=AdvancedInstrumentTree_2007-30-01.pdf>;
+    skos:hasTopConcept
+        mit:Electronic_instruments,
+        mit:Other_instruments,
+        mit:Percussion_instruments,
+        mit:String_instruments,
+        mit:Wind_instruments.
+   fo:me a foaf:Person; foaf:name "Ivan Herman" .
+mit:Wind_instruments
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Brass, mit:Organ, mit:Woodwind;
+    skos:prefLabel
+       "Wind instruments".
+mit:Woodwind
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Flute, mit:Reeds;
+    skos:prefLabel
+       "Woodwind".
+mit:Reeds
+    a    skos:Concept;
+    skos:broader
+       mit:Woodwind;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Double_reed, mit:Free_reed, mit:Singular_reed;
+    skos:prefLabel
+       "Reeds".
+mit:Double_reed
+    a    skos:Concept;
+    skos:broader
+       mit:Reeds;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Bagpipe,
+        mit:Bassoon,
+        mit:Contrabassoon,
+        mit:Crumhorn,
+        mit:Korholt,
+        mit:Oboe;
+    skos:prefLabel
+       "Double reed".
+mit:Bagpipe
+    a    skos:Concept;
+    skos:broader
+       mit:Double_reed;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Northumbrian_pipes, mit:Uilleann_pipes;
+    skos:prefLabel
+       "Bagpipe".
+mit:Uilleann_pipes
+    a    skos:Concept;
+    skos:broader
+       mit:Bagpipe;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Uilleann pipes".
+mit:Northumbrian_pipes
+    a    skos:Concept;
+    skos:broader
+       mit:Bagpipe;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Northumbrian pipes".
+mit:Bassoon
+    a    skos:Concept;
+    skos:broader
+       mit:Double_reed;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Bassoon".
+mit:Korholt
+    a    skos:Concept;
+    skos:broader
+       mit:Double_reed;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Korholt".
+mit:Contrabassoon
+    a    skos:Concept;
+    skos:broader
+       mit:Double_reed;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Contrabassoon".
+mit:Oboe
+    a    skos:Concept;
+    skos:broader
+       mit:Double_reed;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:English_Horn, mit:Heckelphone, mit:Kèn_Bau;
+    skos:prefLabel
+       "Oboe".
+mit:English_Horn
+    a    skos:Concept;
+    skos:broader
+       mit:Oboe;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "English Horn".
+mit:Heckelphone
+    a    skos:Concept;
+    skos:broader
+       mit:Oboe;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Heckelphone".
+mit:Kèn_Bau
+    a    skos:Concept;
+    skos:broader
+       mit:Oboe;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "K\u00e8n B\u1ea7u".
+mit:Crumhorn
+    a    skos:Concept;
+    skos:broader
+       mit:Double_reed;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Crumhorn".
+mit:Singular_reed
+    a    skos:Concept;
+    skos:broader
+       mit:Reeds;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Clarinet, mit:Saxophone;
+    skos:prefLabel
+       "Singular reed".
+mit:Clarinet
+    a    skos:Concept;
+    skos:broader
+       mit:Singular_reed;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Alto_clarinet, mit:Bass_clarinet, mit:Contrabass_clarinet;
+    skos:prefLabel
+       "Clarinet".
+mit:Alto_clarinet
+    a    skos:Concept;
+    skos:broader
+       mit:Clarinet;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Alto clarinet".
+mit:Bass_clarinet
+    a    skos:Concept;
+    skos:broader
+       mit:Clarinet;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Bass clarinet".
+mit:Contrabass_clarinet
+    a    skos:Concept;
+    skos:broader
+       mit:Clarinet;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Contrabass clarinet".
+mit:Saxophone
+    a    skos:Concept;
+    skos:broader
+       mit:Singular_reed;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Alto_saxophone,
+        mit:Baritone_saxophone,
+        mit:Soprano_saxophone,
+        mit:Tenor_saxophone;
+    skos:prefLabel
+       "Saxophone".
+mit:Soprano_saxophone
+    a    skos:Concept;
+    skos:broader
+       mit:Saxophone;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Soprano saxophone".
+mit:Alto_saxophone
+    a    skos:Concept;
+    skos:broader
+       mit:Saxophone;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Alto saxophone".
+mit:Tenor_saxophone
+    a    skos:Concept;
+    skos:broader
+       mit:Saxophone;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Tenor saxophone".
+mit:Baritone_saxophone
+    a    skos:Concept;
+    skos:broader
+       mit:Saxophone;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Baritone saxophone".
+mit:Free_reed
+    a    skos:Concept;
+    skos:broader
+       mit:Reeds;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Accordion,
+        mit:Bandoneon,
+        mit:Concertina,
+        mit:Dinh_taktar,
+        mit:Harmonica,
+        mit:Hmong_flute,
+        mit:Jew_s_harp,
+        mit:Khen_la_,
+        mit:Ki_pah,
+        mit:Melodica,
+        mit:Sheng;
+    skos:prefLabel
+       "Free reed".
+mit:Jew_s_harp
+    a    skos:Concept;
+    skos:broader
+       mit:Free_reed;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Jew's harp".
+mit:Accordion
+    a    skos:Concept;
+    skos:broader
+       mit:Free_reed;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Button_accordion, mit:Piano_accordion;
+    skos:prefLabel
+       "Accordion".
+mit:Piano_accordion
+    a    skos:Concept;
+    skos:broader
+       mit:Accordion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Piano accordion".
+mit:Button_accordion
+    a    skos:Concept;
+    skos:broader
+       mit:Accordion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Diatonic_accordion;
+    skos:prefLabel
+       "Button accordion".
+mit:Diatonic_accordion
+    a    skos:Concept;
+    skos:broader
+       mit:Button_accordion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Diatonic accordion".
+mit:Concertina
+    a    skos:Concept;
+    skos:broader
+       mit:Free_reed;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Concertina".
+mit:Harmonica
+    a    skos:Concept;
+    skos:broader
+       mit:Free_reed;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Chromatic_harmonica, mit:Ding_Nam;
+    skos:prefLabel
+       "Harmonica".
+mit:Chromatic_harmonica
+    a    skos:Concept;
+    skos:broader
+       mit:Harmonica;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Chromatic harmonica".
+mit:Ding_Nam
+    a    skos:Concept;
+    skos:broader
+       mit:Harmonica;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Khèn_Meo;
+    skos:prefLabel
+       "\u0110ing Nam".
+mit:Khèn_Meo
+    a    skos:Concept;
+    skos:broader
+       mit:Ding_Nam;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Kh\u00e8n Me\u00f2".
+mit:Bandoneon
+    a    skos:Concept;
+    skos:broader
+       mit:Free_reed;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Bandone\u00f3n".
+mit:Melodica
+    a    skos:Concept;
+    skos:broader
+       mit:Free_reed;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Melodica".
+mit:Sheng
+    a    skos:Concept;
+    skos:broader
+       mit:Free_reed;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Sho;
+    skos:prefLabel
+       "Sheng".
+mit:Sho
+    a    skos:Concept;
+    skos:broader
+       mit:Sheng;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Sho".
+mit:Ki_pah
+    a    skos:Concept;
+    skos:broader
+       mit:Free_reed;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Ki pah".
+mit:Hmong_flute
+    a    skos:Concept;
+    skos:broader
+       mit:Free_reed;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Pang_gu_ly_hu_Hmong,
+        mit:Sao_meo,
+        mit:Tram_plè,
+        mit:Trang_lu,
+        mit:Trang_lu;
+    skos:prefLabel
+       "Hm\u00f4ng flute".
+mit:Tram_plè
+    a    skos:Concept;
+    skos:broader
+       mit:Hmong_flute;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Tr\u00e0m pl\u00e8".
+mit:Trang_lu
+    a    skos:Concept, skos:Concept;
+    skos:broader
+       mit:Hmong_flute, mit:Hmong_flute;
+    skos:inScheme
+       ins:Musical_instruments, ins:Musical_instruments;
+    skos:narrower
+       mit:Trang_Jau;
+    skos:prefLabel
+       "Trang lu", "Tr\u1eafng lu".
+mit:Trang_Jau
+    a    skos:Concept;
+    skos:broader
+       mit:Trang_lu;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Tr\u1eafng J\u00e2u".
+mit:Pang_gu_ly_hu_Hmong
+    a    skos:Concept;
+    skos:broader
+       mit:Hmong_flute;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Pang gu ly hu Hm\u00f4ng".
+mit:Sao_meo
+    a    skos:Concept;
+    skos:broader
+       mit:Hmong_flute;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "S\u00e1o me\u00f2".
+mit:Dinh_taktar
+    a    skos:Concept;
+    skos:broader
+       mit:Free_reed;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Dinh takt\u00e0r".
+mit:Khen_la_
+    a    skos:Concept;
+    skos:broader
+       mit:Free_reed;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Khen la'".
+mit:Flute
+    a    skos:Concept;
+    skos:broader
+       mit:Woodwind;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Fipple_flutes, mit:Other_flutes;
+    skos:prefLabel
+       "Flute".
+mit:Fipple_flutes
+    a    skos:Concept;
+    skos:broader
+       mit:Flute;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Bansuri,
+        mit:Recorder,
+        mit:Shakuhachi,
+        mit:Slide_whistle,
+        mit:Tin_whistle,
+        mit:Traverse_flute,
+        mit:Vertical_flute,
+        mit:Willow_flute;
+    skos:prefLabel
+       "Fipple flutes".
+mit:Traverse_flute
+    a    skos:Concept;
+    skos:broader
+       mit:Fipple_flutes;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Alto_flute, mit:Piccolo, mit:Sao_truc;
+    skos:prefLabel
+       "Traverse flute".
+mit:Piccolo
+    a    skos:Concept;
+    skos:broader
+       mit:Traverse_flute;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Piccolo".
+mit:Alto_flute
+    a    skos:Concept;
+    skos:broader
+       mit:Traverse_flute;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Alto flute".
+mit:Sao_truc
+    a    skos:Concept;
+    skos:broader
+       mit:Traverse_flute;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "S\u00e1o tr\u00fac".
+mit:Vertical_flute
+    a    skos:Concept;
+    skos:broader
+       mit:Fipple_flutes;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Pi_thiu;
+    skos:prefLabel
+       "Vertical flute".
+mit:Pi_thiu
+    a    skos:Concept;
+    skos:broader
+       mit:Vertical_flute;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "P\u00ed thiu".
+mit:Recorder
+    a    skos:Concept;
+    skos:altLabel
+       "Blockfl\u00f6te";
+    skos:broader
+       mit:Fipple_flutes;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Alto_recorder,
+        mit:Bass_recorder,
+        mit:Contrabass_recorder,
+        mit:Garkelin_recorder,
+        mit:Great_bass_recorder,
+        mit:Sopranino_recorder,
+        mit:Tenor_recorder;
+    skos:prefLabel
+       "Recorder".
+mit:Garkelin_recorder
+    a    skos:Concept;
+    skos:broader
+       mit:Recorder;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Garkelin recorder".
+mit:Sopranino_recorder
+    a    skos:Concept;
+    skos:broader
+       mit:Recorder;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Sopranino recorder".
+mit:Alto_recorder
+    a    skos:Concept;
+    skos:altLabel
+       "Treble recorder";
+    skos:broader
+       mit:Recorder;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Alto recorder".
+mit:Tenor_recorder
+    a    skos:Concept;
+    skos:broader
+       mit:Recorder;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Tenor recorder".
+mit:Bass_recorder
+    a    skos:Concept;
+    skos:altLabel
+       "F-bass recorder";
+    skos:broader
+       mit:Recorder;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Bass recorder".
+mit:Great_bass_recorder
+    a    skos:Concept;
+    skos:altLabel
+       "C-bass recorder";
+    skos:broader
+       mit:Recorder;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Great bass recorder".
+mit:Contrabass_recorder
+    a    skos:Concept;
+    skos:broader
+       mit:Recorder;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Contrabass recorder".
+mit:Bansuri
+    a    skos:Concept;
+    skos:broader
+       mit:Fipple_flutes;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Bansuri".
+mit:Willow_flute
+    a    skos:Concept;
+    skos:broader
+       mit:Fipple_flutes;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Willow flute".
+mit:Shakuhachi
+    a    skos:Concept;
+    skos:broader
+       mit:Fipple_flutes;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Shakuhachi".
+mit:Tin_whistle
+    a    skos:Concept;
+    skos:broader
+       mit:Fipple_flutes;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Tin whistle".
+mit:Slide_whistle
+    a    skos:Concept;
+    skos:broader
+       mit:Fipple_flutes;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Slide whistle".
+mit:Other_flutes
+    a    skos:Concept;
+    skos:broader
+       mit:Flute;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Ding_Buot,
+        mit:Nose_flute,
+        mit:Ocarina,
+        mit:Pan_flue,
+        mit:Sao_oi_flute,
+        mit:Tieu_flute,
+        mit:k_long_put;
+    skos:prefLabel
+       "Other flutes".
+mit:Pan_flue
+    a    skos:Concept;
+    skos:broader
+       mit:Other_flutes;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Nai, mit:Syrinx;
+    skos:prefLabel
+       "Pan flue".
+mit:Syrinx
+    a    skos:Concept;
+    skos:broader
+       mit:Pan_flue;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Syrinx".
+mit:Nai
+    a    skos:Concept;
+    skos:broader
+       mit:Pan_flue;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Nai".
+mit:Ding_Buot
+    a    skos:Concept;
+    skos:broader
+       mit:Other_flutes;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "\u0110ing Bu\u1ed1t".
+mit:Sao_oi_flute
+    a    skos:Concept;
+    skos:broader
+       mit:Other_flutes;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Sa\u00f3 \u00f4i flute".
+mit:Tieu_flute
+    a    skos:Concept;
+    skos:broader
+       mit:Other_flutes;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Tieu flute".
+mit:Ocarina
+    a    skos:Concept;
+    skos:broader
+       mit:Other_flutes;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Ocarina".
+mit:Nose_flute
+    a    skos:Concept;
+    skos:broader
+       mit:Other_flutes;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Nose flute".
+mit:k_long_put
+    a    skos:Concept;
+    skos:broader
+       mit:Other_flutes;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "k'long p\u00fat".
+mit:Brass
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Keyed_brass_instruments,
+        mit:Natural_brass_instruments,
+        mit:Slide_brass_instruments,
+        mit:Valved_brass_instruments;
+    skos:prefLabel
+       "Brass".
+mit:Valved_brass_instruments
+    a    skos:Concept;
+    skos:broader
+       mit:Brass;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Cornet, mit:Flugelhorn, mit:Horn, mit:Mellophone, mit:Trumpet, mit:Tuba;
+    skos:prefLabel
+       "Valved brass instruments".
+mit:Trumpet
+    a    skos:Concept;
+    skos:broader
+       mit:Valved_brass_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Trumpet".
+mit:Cornet
+    a    skos:Concept;
+    skos:broader
+       mit:Valved_brass_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Cornet".
+mit:Flugelhorn
+    a    skos:Concept;
+    skos:broader
+       mit:Valved_brass_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Flugelhorn".
+mit:Mellophone
+    a    skos:Concept;
+    skos:broader
+       mit:Valved_brass_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Mellophone".
+mit:Horn
+    a    skos:Concept;
+    skos:broader
+       mit:Valved_brass_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Baritone_horn,
+        mit:French_horn,
+        <http://purl.org/ontology/mo/mit#Tenor_horn_(Alto_horn)>;
+    skos:prefLabel
+       "Horn".
+mit:French_horn
+    a    skos:Concept;
+    skos:broader
+       mit:Horn;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "French horn".
+mit:Baritone_horn
+    a    skos:Concept;
+    skos:broader
+       mit:Horn;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Baritone horn".
+<http://purl.org/ontology/mo/mit#Tenor_horn_(Alto_horn)>
+    a    skos:Concept;
+    skos:broader
+       mit:Horn;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Tenor horn (Alto horn)".
+mit:Tuba
+    a    skos:Concept;
+    skos:broader
+       mit:Valved_brass_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Euphonium, mit:Sousaphone, mit:Wagner_tuba;
+    skos:prefLabel
+       "Tuba".
+mit:Euphonium
+    a    skos:Concept;
+    skos:broader
+       mit:Tuba;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Euphonium".
+mit:Sousaphone
+    a    skos:Concept;
+    skos:broader
+       mit:Tuba;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Sousaphone".
+mit:Wagner_tuba
+    a    skos:Concept;
+    skos:broader
+       mit:Tuba;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Wagner tuba".
+mit:Slide_brass_instruments
+    a    skos:Concept;
+    skos:broader
+       mit:Brass;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Trombone;
+    skos:prefLabel
+       "Slide brass instruments".
+mit:Trombone
+    a    skos:Concept;
+    skos:broader
+       mit:Slide_brass_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Bass_Trombone, mit:Sackbut, mit:Valve_Trombone;
+    skos:prefLabel
+       "Trombone".
+mit:Bass_Trombone
+    a    skos:Concept;
+    skos:broader
+       mit:Trombone;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Bass Trombone".
+mit:Valve_Trombone
+    a    skos:Concept;
+    skos:broader
+       mit:Trombone;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Valve Trombone".
+mit:Sackbut
+    a    skos:Concept;
+    skos:broader
+       mit:Trombone;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Sackbut".
+mit:Keyed_brass_instruments
+    a    skos:Concept;
+    skos:broader
+       mit:Brass;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Cornett, mit:Serpent;
+    skos:prefLabel
+       "Keyed brass instruments".
+mit:Serpent
+    a    skos:Concept;
+    skos:broader
+       mit:Keyed_brass_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Serpent".
+mit:Cornett
+    a    skos:Concept;
+    skos:broader
+       mit:Keyed_brass_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Cornett".
+mit:Natural_brass_instruments
+    a    skos:Concept;
+    skos:broader
+       mit:Brass;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Alphorn,
+        mit:Bugle,
+        mit:Conch,
+        mit:Didgeridoo,
+        mit:Ophicleide,
+        mit:Shofar;
+    skos:prefLabel
+       "Natural brass instruments".
+mit:Bugle
+    a    skos:Concept;
+    skos:broader
+       mit:Natural_brass_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Bugle".
+mit:Alphorn
+    a    skos:Concept;
+    skos:broader
+       mit:Natural_brass_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Alphorn".
+mit:Shofar
+    a    skos:Concept;
+    skos:broader
+       mit:Natural_brass_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Shofar".
+mit:Conch
+    a    skos:Concept;
+    skos:broader
+       mit:Natural_brass_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Conch".
+mit:Didgeridoo
+    a    skos:Concept;
+    skos:broader
+       mit:Natural_brass_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Didgeridoo".
+mit:Ophicleide
+    a    skos:Concept;
+    skos:broader
+       mit:Natural_brass_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Ophicleide".
+mit:Organ
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Calliope,
+        mit:Hammond_organ,
+        mit:Pipe_organ,
+        mit:Reed_organ,
+        mit:Theatre_organ;
+    skos:prefLabel
+       "Organ".
+mit:Hammond_organ
+    a    skos:Concept;
+    skos:broader
+       mit:Organ;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Hammond organ".
+mit:Pipe_organ
+    a    skos:Concept;
+    skos:broader
+       mit:Organ;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Pipe organ".
+mit:Reed_organ
+    a    skos:Concept;
+    skos:broader
+       mit:Organ;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Harmonium;
+    skos:prefLabel
+       "Reed organ".
+mit:Harmonium
+    a    skos:Concept;
+    skos:broader
+       mit:Reed_organ;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Harmonium".
+mit:Calliope
+    a    skos:Concept;
+    skos:broader
+       mit:Organ;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Calliope".
+mit:Theatre_organ
+    a    skos:Concept;
+    skos:broader
+       mit:Organ;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Theatre organ".
+mit:String_instruments
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Bowed_string_instruments,
+        mit:Other_String_instruments,
+        mit:Plucked_string_instruments,
+        mit:Struck_string_instruments;
+    skos:prefLabel
+       "String instruments".
+mit:Bowed_string_instruments
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Aracaic_and_Other_bowed_string-instruments,
+        mit:Huqin,
+        mit:Viola_da_gamba,
+        mit:Violins;
+    skos:prefLabel
+       "Bowed string instruments".
+mit:Viola_da_gamba
+    a    skos:Concept;
+    skos:broader
+       mit:Bowed_string_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Bass, mit:Rebec, mit:Viola_d_amore;
+    skos:prefLabel
+       "Viola da gamba".
+mit:Rebec
+    a    skos:Concept;
+    skos:broader
+       mit:Viola_da_gamba;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Rebec".
+mit:Bass
+    a    skos:Concept;
+    skos:broader
+       mit:Viola_da_gamba;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Acoustic_upright_bass, mit:Double_Bass;
+    skos:prefLabel
+       "Bass".
+mit:Double_Bass
+    a    skos:Concept;
+    skos:altLabel
+       "Contrabass";
+    skos:broader
+       mit:Bass;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Double Bass".
+mit:Acoustic_upright_bass
+    a    skos:Concept;
+    skos:broader
+       mit:Bass;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Electric_upright_bass;
+    skos:prefLabel
+       "Acoustic upright bass".
+mit:Electric_upright_bass
+    a    skos:Concept;
+    skos:broader
+       mit:Acoustic_upright_bass;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Electric upright bass".
+mit:Viola_d_amore
+    a    skos:Concept;
+    skos:broader
+       mit:Viola_da_gamba;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Viola d'amore".
+mit:Violins
+    a    skos:Concept;
+    skos:broader
+       mit:Bowed_string_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Cello, mit:Viola, mit:Violin;
+    skos:prefLabel
+       "Violins".
+mit:Cello
+    a    skos:Concept;
+    skos:broader
+       mit:Violins;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Electric_cello;
+    skos:prefLabel
+       "Cello".
+mit:Electric_cello
+    a    skos:Concept;
+    skos:broader
+       mit:Cello;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Electric cello".
+mit:Viola
+    a    skos:Concept;
+    skos:broader
+       mit:Violins;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Viola".
+mit:Violin
+    a    skos:Concept;
+    skos:broader
+       mit:Violins;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Alto_Violin,
+        mit:Electric_violin,
+        mit:Fiddle,
+        mit:Soprano_Violin,
+        mit:Treble_Violin,
+        mit:Vielle,
+        mit:Violotta;
+    skos:prefLabel
+       "Violin".
+mit:Treble_Violin
+    a    skos:Concept;
+    skos:broader
+       mit:Violin;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Treble Violin".
+mit:Soprano_Violin
+    a    skos:Concept;
+    skos:broader
+       mit:Violin;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Soprano Violin".
+mit:Alto_Violin
+    a    skos:Concept;
+    skos:broader
+       mit:Violin;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Alto Violin".
+mit:Violotta
+    a    skos:Concept;
+    skos:broader
+       mit:Violin;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Violotta".
+mit:Fiddle
+    a    skos:Concept;
+    skos:broader
+       mit:Violin;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Hardingfele, mit:Kemenche;
+    skos:prefLabel
+       "Fiddle".
+mit:Hardingfele
+    a    skos:Concept;
+    skos:broader
+       mit:Fiddle;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Hardingfele".
+mit:Kemenche
+    a    skos:Concept;
+    skos:broader
+       mit:Fiddle;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Kemenche".
+mit:Electric_violin
+    a    skos:Concept;
+    skos:broader
+       mit:Violin;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Electric violin".
+mit:Vielle
+    a    skos:Concept;
+    skos:broader
+       mit:Violin;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Vielle".
+mit:Huqin
+    a    skos:Concept;
+    skos:broader
+       mit:Bowed_string_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Banhu,
+        mit:Cizhonghu,
+        mit:Dan_nhi,
+        mit:Erhu,
+        mit:Gehu,
+        mit:Jing_Hu,
+        mit:Kokyu,
+        mit:Morin_khuur,
+        mit:Yehu,
+        mit:Zhonghu;
+    skos:prefLabel
+       "Huqin".
+mit:Jing_Hu
+    a    skos:Concept;
+    skos:broader
+       mit:Huqin;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Jing H\u00fa".
+mit:Erhu
+    a    skos:Concept;
+    skos:broader
+       mit:Huqin;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Gaohu;
+    skos:prefLabel
+       "\u00c8rh\u00fa".
+mit:Gaohu
+    a    skos:Concept;
+    skos:broader
+       mit:Erhu;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Gaohu".
+mit:Zhonghu
+    a    skos:Concept;
+    skos:broader
+       mit:Huqin;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Zhonghu".
+mit:Cizhonghu
+    a    skos:Concept;
+    skos:broader
+       mit:Huqin;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Cizhonghu".
+mit:Gehu
+    a    skos:Concept;
+    skos:broader
+       mit:Huqin;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Diyingehu;
+    skos:prefLabel
+       "Gehu".
+mit:Diyingehu
+    a    skos:Concept;
+    skos:broader
+       mit:Gehu;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Diyingehu".
+mit:Banhu
+    a    skos:Concept;
+    skos:altLabel
+       "Banghu";
+    skos:broader
+       mit:Huqin;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Banhu".
+mit:Yehu
+    a    skos:Concept;
+    skos:broader
+       mit:Huqin;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Yehu".
+mit:Kokyu
+    a    skos:Concept;
+    skos:broader
+       mit:Huqin;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Kokyu".
+mit:Morin_khuur
+    a    skos:Concept;
+    skos:altLabel
+       "Matouqin";
+    skos:broader
+       mit:Huqin;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Morin khuur".
+mit:Dan_nhi
+    a    skos:Concept;
+    skos:broader
+       mit:Huqin;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "\u0110\u00e0n nh\u1ecb".
+mit:Aracaic_and_Other_bowed_string-instruments
+    a    skos:Concept;
+    skos:broader
+       mit:Bowed_string_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Bowed_psaltery,
+        mit:Crwth,
+        mit:Gudok,
+        mit:Musical_Saw,
+        mit:Nyckelharpa,
+        mit:Viola_organista;
+    skos:prefLabel
+       "Aracaic and Other bowed string-instruments".
+mit:Viola_organista
+    a    skos:Concept;
+    skos:broader
+       mit:Aracaic_and_Other_bowed_string-instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Viola organista".
+mit:Crwth
+    a    skos:Concept;
+    skos:broader
+       mit:Aracaic_and_Other_bowed_string-instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Crwth".
+mit:Nyckelharpa
+    a    skos:Concept;
+    skos:broader
+       mit:Aracaic_and_Other_bowed_string-instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Nyckelharpa".
+mit:Bowed_psaltery
+    a    skos:Concept;
+    skos:broader
+       mit:Aracaic_and_Other_bowed_string-instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Bowed psaltery".
+mit:Gudok
+    a    skos:Concept;
+    skos:broader
+       mit:Aracaic_and_Other_bowed_string-instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Gadulka;
+    skos:prefLabel
+       "Gudok".
+mit:Gadulka
+    a    skos:Concept;
+    skos:broader
+       mit:Gudok;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Gadulka".
+mit:Musical_Saw
+    a    skos:Concept;
+    skos:broader
+       mit:Aracaic_and_Other_bowed_string-instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Musical Saw".
+mit:Plucked_string_instruments
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Guitars, mit:Lute, mit:Lyre, mit:Musical_bow, mit:Zither;
+    skos:prefLabel
+       "Plucked string instruments".
+mit:Guitars
+    a    skos:Concept;
+    skos:broader
+       mit:Plucked_string_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Bass_Guitar,
+        mit:Guitar,
+        mit:Spanish_Vihuela,
+        mit:Tiple,
+        mit:Tres,
+        mit:Ukulele;
+    skos:prefLabel
+       "Guitars".
+mit:Guitar
+    a    skos:Concept;
+    skos:broader
+       mit:Guitars;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Baritone_guitar,
+        mit:Classical_guitar,
+        mit:Hawaiian_guitar,
+        mit:Slide_guitar,
+        mit:Steel_guitar,
+        mit:Vietnamese_guitar;
+    skos:prefLabel
+       "Guitar".
+mit:Classical_guitar
+    a    skos:Concept;
+    skos:broader
+       mit:Guitar;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Acoustic_guitar;
+    skos:prefLabel
+       "Classical guitar".
+mit:Acoustic_guitar
+    a    skos:Concept;
+    skos:broader
+       mit:Classical_guitar;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Spanish_acoustic_guitar;
+    skos:prefLabel
+       "Acoustic guitar".
+mit:Spanish_acoustic_guitar
+    a    skos:Concept;
+    skos:broader
+       mit:Acoustic_guitar;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Spanish acoustic guitar".
+mit:Slide_guitar
+    a    skos:Concept;
+    skos:broader
+       mit:Guitar;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Slide guitar".
+mit:Steel_guitar
+    a    skos:Concept;
+    skos:broader
+       mit:Guitar;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Lap_steel_guitar, mit:Table_steel_guitar;
+    skos:prefLabel
+       "Steel guitar".
+mit:Lap_steel_guitar
+    a    skos:Concept;
+    skos:broader
+       mit:Steel_guitar;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Electric_lap_steel_guitar, mit:Resonator_guitar;
+    skos:prefLabel
+       "Lap steel guitar".
+mit:Electric_lap_steel_guitar
+    a    skos:Concept;
+    skos:broader
+       mit:Lap_steel_guitar;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Electric_Guitar;
+    skos:prefLabel
+       "Electric lap steel guitar".
+mit:Electric_Guitar
+    a    skos:Concept;
+    skos:broader
+       mit:Electric_lap_steel_guitar;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Electric Guitar".
+mit:Resonator_guitar
+    a    skos:Concept;
+    skos:broader
+       mit:Lap_steel_guitar;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Dobro;
+    skos:prefLabel
+       "Resonator guitar".
+mit:Dobro
+    a    skos:Concept;
+    skos:broader
+       mit:Resonator_guitar;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Dobro".
+mit:Table_steel_guitar
+    a    skos:Concept;
+    skos:broader
+       mit:Steel_guitar;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Pedal_steel_guitar;
+    skos:prefLabel
+       "Table steel guitar".
+mit:Pedal_steel_guitar
+    a    skos:Concept;
+    skos:broader
+       mit:Table_steel_guitar;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Pedal steel guitar".
+mit:Baritone_guitar
+    a    skos:Concept;
+    skos:broader
+       mit:Guitar;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Baritone guitar".
+mit:Vietnamese_guitar
+    a    skos:Concept;
+    skos:broader
+       mit:Guitar;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Vietnamese guitar".
+mit:Hawaiian_guitar
+    a    skos:Concept;
+    skos:broader
+       mit:Guitar;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Hawaiian guitar".
+mit:Bass_Guitar
+    a    skos:Concept;
+    skos:broader
+       mit:Guitars;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Acoustic_bass_guitar, mit:Dan_tu_day, mit:Electric_bass_guitar;
+    skos:prefLabel
+       "Bass Guitar".
+mit:Acoustic_bass_guitar
+    a    skos:Concept;
+    skos:broader
+       mit:Bass_Guitar;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Acoustic bass guitar".
+mit:Electric_bass_guitar
+    a    skos:Concept;
+    skos:broader
+       mit:Bass_Guitar;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Electric bass guitar".
+mit:Dan_tu_day
+    a    skos:Concept;
+    skos:broader
+       mit:Bass_Guitar;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "\u0110\u00e0n t\u1ee9 d\u00e2y".
+mit:Tiple
+    a    skos:Concept;
+    skos:broader
+       mit:Guitars;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Mexican_vihuela;
+    skos:prefLabel
+       "Tiple".
+mit:Mexican_vihuela
+    a    skos:Concept;
+    skos:broader
+       mit:Tiple;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Mexican vihuela".
+mit:Ukulele
+    a    skos:Concept;
+    skos:broader
+       mit:Guitars;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Ukulele".
+mit:Spanish_Vihuela
+    a    skos:Concept;
+    skos:broader
+       mit:Guitars;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Spanish Vihuela".
+mit:Tres
+    a    skos:Concept;
+    skos:broader
+       mit:Guitars;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Tres".
+mit:Lute
+    a    skos:Concept;
+    skos:broader
+       mit:Plucked_string_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Cittern,
+        mit:Gumbri,
+        mit:Moon_Lute,
+        mit:Oud,
+        mit:Pipa,
+        mit:Rebab,
+        mit:Sanxian,
+        mit:Sitar,
+        mit:Tambura,
+        mit:Theorbo,
+        mit:Turkish_baglama,
+        <http://purl.org/ontology/mo/mit#Xalam_(khalam)>;
+    skos:prefLabel
+       "Lute".
+mit:Oud
+    a    skos:Concept;
+    skos:broader
+       mit:Lute;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Biwa;
+    skos:prefLabel
+       "Oud".
+mit:Biwa
+    a    skos:Concept;
+    skos:broader
+       mit:Oud;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Biwa".
+mit:Theorbo
+    a    skos:Concept;
+    skos:broader
+       mit:Lute;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Theorbo".
+mit:Turkish_baglama
+    a    skos:Concept;
+    skos:broader
+       mit:Lute;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Greek_baglama;
+    skos:prefLabel
+       "Turkish baglama".
+mit:Greek_baglama
+    a    skos:Concept;
+    skos:broader
+       mit:Turkish_baglama;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Greek baglama".
+mit:Cittern
+    a    skos:Concept;
+    skos:broader
+       mit:Lute;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Cittern".
+mit:Tambura
+    a    skos:Concept;
+    skos:broader
+       mit:Lute;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Balalaika, mit:Bandura, mit:Bouzouki, mit:Mandola, mit:Tamburitza;
+    skos:prefLabel
+       "Tambura".
+mit:Tamburitza
+    a    skos:Concept;
+    skos:broader
+       mit:Tambura;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Tamburitza".
+mit:Bouzouki
+    a    skos:Concept;
+    skos:broader
+       mit:Tambura;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Bouzouki".
+mit:Mandola
+    a    skos:Concept;
+    skos:broader
+       mit:Tambura;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Mandolin;
+    skos:prefLabel
+       "Mandola".
+mit:Mandolin
+    a    skos:Concept;
+    skos:broader
+       mit:Mandola;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Mandolin".
+mit:Balalaika
+    a    skos:Concept;
+    skos:broader
+       mit:Tambura;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Balalaika".
+mit:Bandura
+    a    skos:Concept, skos:Concept;
+    skos:broader
+       mit:Tambura, mit:Zither;
+    skos:inScheme
+       ins:Musical_instruments, ins:Musical_instruments;
+    skos:prefLabel
+       "Bandura", "Bandura".
+mit:Gumbri
+    a    skos:Concept;
+    skos:broader
+       mit:Lute;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Gumbri".
+mit:Rebab
+    a    skos:Concept;
+    skos:broader
+       mit:Lute;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Sarod;
+    skos:prefLabel
+       "Rebab".
+mit:Sarod
+    a    skos:Concept;
+    skos:broader
+       mit:Rebab;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Sarod".
+<http://purl.org/ontology/mo/mit#Xalam_(khalam)>
+    a    skos:Concept;
+    skos:broader
+       mit:Lute;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Banjo;
+    skos:prefLabel
+       "Xalam (khalam)".
+mit:Banjo
+    a    skos:Concept;
+    skos:broader
+       <http://purl.org/ontology/mo/mit#Xalam_(khalam)>;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Banjo".
+mit:Moon_Lute
+    a    skos:Concept;
+    skos:broader
+       mit:Lute;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Dan_Tam, mit:Dan_nguyet, mit:Zhongruan;
+    skos:prefLabel
+       "Moon Lute".
+mit:Zhongruan
+    a    skos:Concept;
+    skos:broader
+       mit:Moon_Lute;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Zhongruan".
+mit:Dan_nguyet
+    a    skos:Concept;
+    skos:broader
+       mit:Moon_Lute;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "\u0110\u00e0n nguy\u1ec7t".
+mit:Dan_Tam
+    a    skos:Concept;
+    skos:broader
+       mit:Moon_Lute;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "\u0110\u00e0n Tam".
+mit:Pipa
+    a    skos:Concept;
+    skos:broader
+       mit:Lute;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Dan_ty_ba;
+    skos:prefLabel
+       "Pipa".
+mit:Dan_ty_ba
+    a    skos:Concept;
+    skos:broader
+       mit:Pipa;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "\u0110\u00e0n t\u1ef3 b\u00e0".
+mit:Sanxian
+    a    skos:Concept;
+    skos:broader
+       mit:Lute;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Sanshin;
+    skos:prefLabel
+       "Sanxi\u00e1n".
+mit:Sanshin
+    a    skos:Concept;
+    skos:broader
+       mit:Sanxian;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Shamisen;
+    skos:prefLabel
+       "Sanshin".
+mit:Shamisen
+    a    skos:Concept;
+    skos:broader
+       mit:Sanshin;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Shamisen".
+mit:Sitar
+    a    skos:Concept;
+    skos:broader
+       mit:Lute;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Electric_Sitar;
+    skos:prefLabel
+       "Sitar".
+mit:Electric_Sitar
+    a    skos:Concept;
+    skos:broader
+       mit:Sitar;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Electric Sitar".
+mit:Lyre
+    a    skos:Concept;
+    skos:broader
+       mit:Plucked_string_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Harp, mit:Kinnor, mit:Kithara;
+    skos:prefLabel
+       "Lyre".
+mit:Kinnor
+    a    skos:Concept;
+    skos:broader
+       mit:Lyre;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Kinnor".
+mit:Kithara
+    a    skos:Concept;
+    skos:broader
+       mit:Lyre;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Kithara".
+mit:Harp
+    a    skos:Concept;
+    skos:broader
+       mit:Lyre;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Concert_harp,
+        mit:Folk_harp,
+        mit:Kora,
+        mit:Psaltery,
+        mit:Wire-strung_harp;
+    skos:prefLabel
+       "Harp".
+mit:Concert_harp
+    a    skos:Concept;
+    skos:broader
+       mit:Harp;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Electric_harp;
+    skos:prefLabel
+       "Concert harp".
+mit:Electric_harp
+    a    skos:Concept;
+    skos:broader
+       mit:Concert_harp;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Electric harp".
+mit:Folk_harp
+    a    skos:Concept;
+    skos:broader
+       mit:Harp;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:German_harp, mit:Irish_harp;
+    skos:prefLabel
+       "Folk harp".
+mit:Irish_harp
+    a    skos:Concept;
+    skos:broader
+       mit:Folk_harp;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Irish harp".
+mit:German_harp
+    a    skos:Concept;
+    skos:broader
+       mit:Folk_harp;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "German harp".
+mit:Wire-strung_harp
+    a    skos:Concept;
+    skos:broader
+       mit:Harp;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Wire-strung harp".
+mit:Psaltery
+    a    skos:Concept;
+    skos:broader
+       mit:Harp;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Harpsichord;
+    skos:prefLabel
+       "Psaltery".
+mit:Harpsichord
+    a    skos:Concept;
+    skos:broader
+       mit:Psaltery;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Harpsichord".
+mit:Kora
+    a    skos:Concept;
+    skos:broader
+       mit:Harp;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Kora".
+mit:Zither
+    a    skos:Concept;
+    skos:broader
+       mit:Plucked_string_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Appalachian_Dulcimer,
+        mit:Bandura,
+        mit:Gayageum,
+        mit:Geomungo,
+        mit:Kanun,
+        mit:Komungo,
+        mit:Koto,
+        mit:Langeleik,
+        mit:Suikinkutsu;
+    skos:prefLabel
+       "Zither".
+mit:Appalachian_Dulcimer
+    a    skos:Concept;
+    skos:broader
+       mit:Zither;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Appalachian Dulcimer".
+mit:Koto
+    a    skos:Concept;
+    skos:broader
+       mit:Zither;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Dan_tranh;
+    skos:prefLabel
+       "Koto".
+mit:Dan_tranh
+    a    skos:Concept;
+    skos:broader
+       mit:Koto;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "\u0110\u00e0n tranh".
+mit:Suikinkutsu
+    a    skos:Concept;
+    skos:broader
+       mit:Zither;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Suikinkutsu".
+mit:Gayageum
+    a    skos:Concept;
+    skos:broader
+       mit:Zither;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Gayageum".
+mit:Komungo
+    a    skos:Concept;
+    skos:broader
+       mit:Zither;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Komungo".
+mit:Geomungo
+    a    skos:Concept;
+    skos:broader
+       mit:Zither;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Geomungo".
+mit:Langeleik
+    a    skos:Concept;
+    skos:broader
+       mit:Zither;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Langeleik".
+mit:Kanun
+    a    skos:Concept;
+    skos:broader
+       mit:Zither;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Kanun".
+mit:Musical_bow
+    a    skos:Concept;
+    skos:broader
+       mit:Plucked_string_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Berimbau, mit:Dan_bau;
+    skos:prefLabel
+       "Musical bow".
+mit:Berimbau
+    a    skos:Concept;
+    skos:broader
+       mit:Musical_bow;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Berimbau".
+mit:Dan_bau
+    a    skos:Concept;
+    skos:broader
+       mit:Musical_bow;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "\u0110\u00e0n b\u1ea7u".
+mit:Struck_string_instruments
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Chapman_Stick,
+        mit:Clavichord,
+        mit:Hammered_dulcimer,
+        mit:Piano,
+        mit:Warr_Guitar;
+    skos:prefLabel
+       "Struck string instruments".
+mit:Hammered_dulcimer
+    a    skos:Concept;
+    skos:broader
+       mit:Struck_string_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Cymbalum, mit:Dan_tam_thap_luc, mit:Santoor, mit:Santur, mit:Yangqin;
+    skos:prefLabel
+       "Hammered dulcimer".
+mit:Cymbalum
+    a    skos:Concept;
+    skos:altLabel
+       "Cimbalom";
+    skos:broader
+       mit:Hammered_dulcimer;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Cymbalum".
+mit:Yangqin
+    a    skos:Concept;
+    skos:broader
+       mit:Hammered_dulcimer;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Khim;
+    skos:prefLabel
+       "Y\u00e1ngq\u00edn".
+mit:Khim
+    a    skos:Concept;
+    skos:broader
+       mit:Yangqin;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Khim".
+mit:Santur
+    a    skos:Concept;
+    skos:broader
+       mit:Hammered_dulcimer;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Santur".
+mit:Santoor
+    a    skos:Concept;
+    skos:broader
+       mit:Hammered_dulcimer;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Santoor".
+mit:Dan_tam_thap_luc
+    a    skos:Concept;
+    skos:broader
+       mit:Hammered_dulcimer;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "\u0110\u00e0n tam th\u1eadp l\u1ee5c".
+mit:Chapman_Stick
+    a    skos:Concept;
+    skos:broader
+       mit:Struck_string_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Chapman Stick".
+mit:Warr_Guitar
+    a    skos:Concept;
+    skos:broader
+       mit:Struck_string_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Warr Guitar".
+mit:Clavichord
+    a    skos:Concept;
+    skos:broader
+       mit:Struck_string_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Clavinet;
+    skos:prefLabel
+       "Clavichord".
+mit:Clavinet
+    a    skos:Concept;
+    skos:broader
+       mit:Clavichord;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Clavinet".
+mit:Piano
+    a    skos:Concept;
+    skos:broader
+       mit:Struck_string_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Electric_Piano,
+        mit:Fortepiano,
+        mit:Grand_Piano,
+        mit:Toy_piano,
+        mit:Upright_Piano;
+    skos:prefLabel
+       "Piano".
+mit:Fortepiano
+    a    skos:Concept;
+    skos:broader
+       mit:Piano;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Fortepiano".
+mit:Grand_Piano
+    a    skos:Concept;
+    skos:broader
+       mit:Piano;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Grand Piano".
+mit:Upright_Piano
+    a    skos:Concept;
+    skos:broader
+       mit:Piano;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Upright Piano".
+mit:Toy_piano
+    a    skos:Concept;
+    skos:broader
+       mit:Piano;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Toy piano".
+mit:Electric_Piano
+    a    skos:Concept;
+    skos:broader
+       mit:Piano;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Chamberlin, mit:Keyboard, mit:Mellotron, mit:Rhodes_Piano;
+    skos:prefLabel
+       "Electric Piano".
+mit:Rhodes_Piano
+    a    skos:Concept;
+    skos:broader
+       mit:Electric_Piano;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Rhodes Piano".
+mit:Chamberlin
+    a    skos:Concept;
+    skos:broader
+       mit:Electric_Piano;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Chamberlin".
+mit:Mellotron
+    a    skos:Concept;
+    skos:broader
+       mit:Electric_Piano;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Mellotron".
+mit:Keyboard
+    a    skos:Concept;
+    skos:broader
+       mit:Electric_Piano;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Keyboard_bass;
+    skos:prefLabel
+       "Keyboard".
+mit:Keyboard_bass
+    a    skos:Concept;
+    skos:broader
+       mit:Keyboard;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Keyboard bass".
+mit:Other_String_instruments
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Aeolian_harp, mit:Hurdy_gurdy, mit:Mbira, mit:Washtub_bass;
+    skos:prefLabel
+       "Other String instruments".
+mit:Aeolian_harp
+    a    skos:Concept;
+    skos:broader
+       mit:Other_String_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Aeolian harp".
+mit:Hurdy_gurdy
+    a    skos:Concept;
+    skos:broader
+       mit:Other_String_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Hurdy gurdy".
+mit:Mbira
+    a    skos:Concept, skos:Concept;
+    skos:broader
+       mit:Other_String_instruments, mit:Tuned_percussion;
+    skos:inScheme
+       ins:Musical_instruments, ins:Musical_instruments;
+    skos:prefLabel
+       "Mbira", "Mbira".
+mit:Washtub_bass
+    a    skos:Concept;
+    skos:broader
+       mit:Other_String_instruments;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Washtub bass".
+mit:Percussion_instruments
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Drums, mit:Other_percussion, mit:Tuned_percussion;
+    skos:prefLabel
+       "Percussion instruments".
+mit:Drums
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Bongos,
+        mit:Cajon,
+        mit:Congas,
+        mit:Dai_co,
+        mit:Dholak,
+        mit:Djembe,
+        mit:Doyra,
+        mit:Drumset,
+        mit:Frame_drum,
+        mit:Goblet_drum,
+        mit:Madal,
+        mit:Slite_drum,
+        mit:Snare_drum,
+        mit:Surdo,
+        mit:Taiko,
+        mit:Talking_drum,
+        mit:Tanbou_ka,
+        mit:Timpani,
+        mit:Vessel_drum;
+    skos:prefLabel
+       "Drums".
+mit:Drumset
+    a    skos:Concept;
+    skos:broader
+       mit:Drums;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Brushes;
+    skos:prefLabel
+       "Drumset".
+mit:Brushes
+    a    skos:Concept;
+    skos:broader
+       mit:Drumset;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Brushes".
+mit:Frame_drum
+    a    skos:Concept;
+    skos:broader
+       mit:Drums;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Bohdran, mit:Ocean_drum, mit:Tambourine;
+    skos:prefLabel
+       "Frame drum".
+mit:Tambourine
+    a    skos:Concept;
+    skos:broader
+       mit:Frame_drum;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Bendir, mit:Daf, mit:Rek;
+    skos:prefLabel
+       "Tambourine".
+mit:Rek
+    a    skos:Concept;
+    skos:broader
+       mit:Tambourine;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Rek".
+mit:Daf
+    a    skos:Concept;
+    skos:broader
+       mit:Tambourine;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Daf".
+mit:Bendir
+    a    skos:Concept;
+    skos:broader
+       mit:Tambourine;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Bendir".
+mit:Bohdran
+    a    skos:Concept;
+    skos:broader
+       mit:Frame_drum;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Bohdr\u00e1n".
+mit:Ocean_drum
+    a    skos:Concept;
+    skos:broader
+       mit:Frame_drum;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Ocean drum".
+mit:Congas
+    a    skos:Concept;
+    skos:broader
+       mit:Drums;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Congas".
+mit:Bongos
+    a    skos:Concept;
+    skos:broader
+       mit:Drums;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Bongos".
+mit:Djembe
+    a    skos:Concept;
+    skos:broader
+       mit:Drums;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Djembe".
+mit:Doyra
+    a    skos:Concept;
+    skos:broader
+       mit:Drums;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Doyra".
+mit:Goblet_drum
+    a    skos:Concept;
+    skos:broader
+       mit:Drums;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Darbuka, mit:Tabla, mit:Trong_Bong, mit:Zarb;
+    skos:prefLabel
+       "Goblet drum".
+mit:Tabla
+    a    skos:Concept;
+    skos:broader
+       mit:Goblet_drum;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Tabla".
+mit:Zarb
+    a    skos:Concept;
+    skos:broader
+       mit:Goblet_drum;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Zarb".
+mit:Darbuka
+    a    skos:Concept;
+    skos:broader
+       mit:Goblet_drum;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Darbuka".
+mit:Trong_Bong
+    a    skos:Concept;
+    skos:broader
+       mit:Goblet_drum;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Tr\u1ed1ng B\u00f4ng".
+mit:Cajon
+    a    skos:Concept;
+    skos:broader
+       mit:Drums;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Caj\u00f3n".
+mit:Madal
+    a    skos:Concept;
+    skos:broader
+       mit:Drums;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Madal".
+mit:Vessel_drum
+    a    skos:Concept;
+    skos:broader
+       mit:Drums;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Ghatam, mit:Udu;
+    skos:prefLabel
+       "Vessel drum".
+mit:Udu
+    a    skos:Concept;
+    skos:broader
+       mit:Vessel_drum;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Udu".
+mit:Ghatam
+    a    skos:Concept;
+    skos:broader
+       mit:Vessel_drum;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Ghatam".
+mit:Taiko
+    a    skos:Concept;
+    skos:broader
+       mit:Drums;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Taiko".
+mit:Tanbou_ka
+    a    skos:Concept;
+    skos:broader
+       mit:Drums;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Tanbou ka".
+mit:Dai_co
+    a    skos:Concept;
+    skos:altLabel
+       "ti\u1ec3u c\u00f4";
+    skos:broader
+       mit:Drums;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "\u0110\u1ea1i c\u00f4".
+mit:Dholak
+    a    skos:Concept;
+    skos:broader
+       mit:Drums;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Dholak".
+mit:Snare_drum
+    a    skos:Concept;
+    skos:broader
+       mit:Drums;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Snare drum".
+mit:Surdo
+    a    skos:Concept;
+    skos:broader
+       mit:Drums;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Surdo".
+mit:Timpani
+    a    skos:Concept;
+    skos:broader
+       mit:Drums;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Timpani".
+mit:Talking_drum
+    a    skos:Concept;
+    skos:broader
+       mit:Drums;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Talking drum".
+mit:Slite_drum
+    a    skos:Concept;
+    skos:broader
+       mit:Drums;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Mo;
+    skos:prefLabel
+       "Slite drum".
+mit:Mo
+    a    skos:Concept;
+    skos:broader
+       mit:Slite_drum;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "M\u00f5".
+mit:Tuned_percussion
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Bells,
+        mit:Chimes,
+        mit:Gongs,
+        mit:Mbira,
+        mit:Singing_bowl,
+        mit:Steelpan,
+        mit:Timbales,
+        mit:Triangle,
+        mit:Whistle,
+        mit:Xylophone;
+    skos:prefLabel
+       "Tuned percussion".
+mit:Bells
+    a    skos:Concept;
+    skos:broader
+       mit:Tuned_percussion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Carillon, mit:Cowbell, mit:Gankogui, mit:Handbells, mit:Tubular_Bells;
+    skos:prefLabel
+       "Bells".
+mit:Handbells
+    a    skos:Concept;
+    skos:broader
+       mit:Bells;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Handbells".
+mit:Tubular_Bells
+    a    skos:Concept;
+    skos:broader
+       mit:Bells;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Tubular Bells".
+mit:Cowbell
+    a    skos:Concept;
+    skos:broader
+       mit:Bells;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Cowbell".
+mit:Carillon
+    a    skos:Concept;
+    skos:broader
+       mit:Bells;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Carillon".
+mit:Gankogui
+    a    skos:Concept;
+    skos:broader
+       mit:Bells;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Gankogui".
+mit:Gongs
+    a    skos:Concept;
+    skos:broader
+       mit:Tuned_percussion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Cymbals, mit:Gong;
+    skos:prefLabel
+       "Gongs".
+mit:Gong
+    a    skos:Concept;
+    skos:broader
+       mit:Gongs;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Chieng;
+    skos:prefLabel
+       "Gong".
+mit:Chieng
+    a    skos:Concept;
+    skos:altLabel
+       "la";
+    skos:broader
+       mit:Gong;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Chi\u00eang".
+mit:Cymbals
+    a    skos:Concept;
+    skos:broader
+       mit:Gongs;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Bat;
+    skos:prefLabel
+       "Cymbals".
+mit:Bat
+    a    skos:Concept;
+    skos:altLabel
+       "Ch\u1eadp choa";
+    skos:broader
+       mit:Cymbals;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "B\u00e1t".
+mit:Xylophone
+    a    skos:Concept;
+    skos:broader
+       mit:Tuned_percussion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Amadinda,
+        mit:Balafon,
+        mit:Celesta,
+        mit:Dan_Trung,
+        mit:Gamelan,
+        mit:Glockenspiel,
+        mit:Marimba,
+        mit:Metallophone,
+        mit:Ti_Bwa,
+        mit:Vibraphone;
+    skos:prefLabel
+       "Xylophone".
+mit:Marimba
+    a    skos:Concept;
+    skos:broader
+       mit:Xylophone;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Marimba".
+mit:Glockenspiel
+    a    skos:Concept;
+    skos:broader
+       mit:Xylophone;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Crotales;
+    skos:prefLabel
+       "Glockenspiel".
+mit:Crotales
+    a    skos:Concept;
+    skos:broader
+       mit:Glockenspiel;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Crotales".
+mit:Celesta
+    a    skos:Concept;
+    skos:broader
+       mit:Xylophone;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Celesta".
+mit:Gamelan
+    a    skos:Concept;
+    skos:broader
+       mit:Xylophone;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Bamboo_angklung;
+    skos:prefLabel
+       "Gamelan".
+mit:Bamboo_angklung
+    a    skos:Concept;
+    skos:broader
+       mit:Gamelan;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Metal_angklung;
+    skos:prefLabel
+       "Bamboo angklung".
+mit:Metal_angklung
+    a    skos:Concept;
+    skos:broader
+       mit:Bamboo_angklung;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Metal angklung".
+mit:Dan_Trung
+    a    skos:Concept;
+    skos:altLabel
+       "Dan Klom-put";
+    skos:broader
+       mit:Xylophone;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Dan Trung".
+mit:Amadinda
+    a    skos:Concept;
+    skos:broader
+       mit:Xylophone;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Amadinda".
+mit:Balafon
+    a    skos:Concept;
+    skos:broader
+       mit:Xylophone;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Balafon".
+mit:Metallophone
+    a    skos:Concept;
+    skos:broader
+       mit:Xylophone;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Metallophone".
+mit:Vibraphone
+    a    skos:Concept;
+    skos:broader
+       mit:Xylophone;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Vibraphone".
+mit:Ti_Bwa
+    a    skos:Concept;
+    skos:broader
+       mit:Xylophone;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Ti Bwa".
+mit:Timbales
+    a    skos:Concept;
+    skos:broader
+       mit:Tuned_percussion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Timbales".
+mit:Steelpan
+    a    skos:Concept;
+    skos:broader
+       mit:Tuned_percussion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Steelpan".
+mit:Triangle
+    a    skos:Concept;
+    skos:broader
+       mit:Tuned_percussion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Triangle".
+mit:Whistle
+    a    skos:Concept;
+    skos:broader
+       mit:Tuned_percussion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Whistle".
+mit:Singing_bowl
+    a    skos:Concept;
+    skos:broader
+       mit:Tuned_percussion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Singing bowl".
+mit:Chimes
+    a    skos:Concept;
+    skos:broader
+       mit:Tuned_percussion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Chimes".
+mit:Other_percussion
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Afuche,
+        mit:Castanets,
+        mit:Gueiro,
+        mit:Handclaps,
+        mit:Mendoza,
+        mit:Ratchet,
+        mit:Rattle,
+        mit:Shakers,
+        mit:Tibetan_Water_Drum,
+        mit:Vibraslap,
+        mit:Washboard,
+        mit:Whip,
+        mit:Wood_Block;
+    skos:prefLabel
+       "Other percussion".
+mit:Afuche
+    a    skos:Concept;
+    skos:altLabel
+       "Cabasa";
+    skos:broader
+       mit:Other_percussion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Afuche".
+mit:Rattle
+    a    skos:Concept;
+    skos:broader
+       mit:Other_percussion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Ankle_rattlers,
+        mit:Chacha,
+        mit:Maracas,
+        mit:Rainstick,
+        mit:Shekere,
+        mit:Sistrum;
+    skos:prefLabel
+       "Rattle".
+mit:Maracas
+    a    skos:Concept;
+    skos:broader
+       mit:Rattle;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Maracas".
+mit:Chacha
+    a    skos:Concept;
+    skos:broader
+       mit:Rattle;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Chacha".
+mit:Sistrum
+    a    skos:Concept;
+    skos:broader
+       mit:Rattle;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Sistrum".
+mit:Ankle_rattlers
+    a    skos:Concept;
+    skos:broader
+       mit:Rattle;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Ankle rattlers".
+mit:Shekere
+    a    skos:Concept;
+    skos:broader
+       mit:Rattle;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Shekere".
+mit:Rainstick
+    a    skos:Concept;
+    skos:broader
+       mit:Rattle;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Rainstick".
+mit:Shakers
+    a    skos:Concept;
+    skos:broader
+       mit:Other_percussion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Shakers".
+mit:Castanets
+    a    skos:Concept;
+    skos:broader
+       mit:Other_percussion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Bin-sasara,
+        mit:Bones,
+        mit:Claves,
+        mit:Rythm_sticks,
+        mit:Sanh_Tien,
+        mit:Song_loan,
+        mit:Spoons;
+    skos:prefLabel
+       "Castanets".
+mit:Spoons
+    a    skos:Concept;
+    skos:broader
+       mit:Castanets;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Spoons".
+mit:Song_loan
+    a    skos:Concept;
+    skos:broader
+       mit:Castanets;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Song loan".
+mit:Bones
+    a    skos:Concept;
+    skos:broader
+       mit:Castanets;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Bones".
+mit:Claves
+    a    skos:Concept;
+    skos:broader
+       mit:Castanets;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Claves".
+mit:Rythm_sticks
+    a    skos:Concept;
+    skos:broader
+       mit:Castanets;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Rythm sticks".
+mit:Sanh_Tien
+    a    skos:Concept;
+    skos:broader
+       mit:Castanets;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Phach;
+    skos:prefLabel
+       "Sanh Ti\u00ean".
+mit:Phach
+    a    skos:Concept;
+    skos:broader
+       mit:Sanh_Tien;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Ph\u00e1ch".
+mit:Bin-sasara
+    a    skos:Concept;
+    skos:broader
+       mit:Castanets;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Bin-sasara".
+mit:Gueiro
+    a    skos:Concept;
+    skos:broader
+       mit:Other_percussion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "G\u00fciro".
+mit:Mendoza
+    a    skos:Concept;
+    skos:broader
+       mit:Other_percussion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Mendoza".
+mit:Ratchet
+    a    skos:Concept;
+    skos:broader
+       mit:Other_percussion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Ratchet".
+mit:Vibraslap
+    a    skos:Concept;
+    skos:broader
+       mit:Other_percussion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Vibraslap".
+mit:Washboard
+    a    skos:Concept;
+    skos:broader
+       mit:Other_percussion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Frattoir;
+    skos:prefLabel
+       "Washboard".
+mit:Frattoir
+    a    skos:Concept;
+    skos:broader
+       mit:Washboard;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Frattoir".
+mit:Whip
+    a    skos:Concept;
+    skos:broader
+       mit:Other_percussion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Whip".
+mit:Wood_Block
+    a    skos:Concept;
+    skos:broader
+       mit:Other_percussion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Temple_Blocks;
+    skos:prefLabel
+       "Wood Block".
+mit:Temple_Blocks
+    a    skos:Concept;
+    skos:broader
+       mit:Wood_Block;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Temple Blocks".
+mit:Tibetan_Water_Drum
+    a    skos:Concept;
+    skos:broader
+       mit:Other_percussion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Waterphone;
+    skos:prefLabel
+       "Tibetan Water Drum".
+mit:Waterphone
+    a    skos:Concept;
+    skos:broader
+       mit:Tibetan_Water_Drum;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Waterphone".
+mit:Handclaps
+    a    skos:Concept;
+    skos:broader
+       mit:Other_percussion;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Handclaps".
+mit:Electronic_instruments
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Denis_d_or,
+        mit:Drum_machine,
+        mit:Dubreq_Stylophone,
+        mit:Ebow,
+        mit:Omnichord,
+        mit:Ondes_Martenot,
+        mit:Programming,
+        mit:Sampler,
+        mit:Synclavier,
+        mit:Synthesizer,
+        mit:Teleharmonium,
+        mit:Theremin,
+        mit:Vocoder,
+        mit:Wavedrum;
+    skos:prefLabel
+       "Electronic instruments".
+mit:Denis_d_or
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Denis d'or".
+mit:Dubreq_Stylophone
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Dubreq Stylophone".
+mit:Drum_machine
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Drum machine".
+mit:Ebow
+   a skos:Concept; skos:inScheme ins:Musical_instruments; skos:prefLabel "Ebow".
+mit:Omnichord
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Omnichord".
+mit:Ondes_Martenot
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Ondes Martenot".
+mit:Sampler
+   a skos:Concept; skos:inScheme ins:Musical_instruments; skos:prefLabel "Sampler".
+mit:Synclavier
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Synclavier".
+mit:Synthesizer
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+       mit:Continuum, mit:Minimoog, mit:Moog;
+    skos:prefLabel
+       "Synthesizer".
+mit:Moog
+    a    skos:Concept;
+    skos:broader
+       mit:Synthesizer;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Moog".
+mit:Minimoog
+    a    skos:Concept;
+    skos:broader
+       mit:Synthesizer;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Minimoog".
+mit:Continuum
+    a    skos:Concept;
+    skos:broader
+       mit:Synthesizer;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Continuum".
+mit:Teleharmonium
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Teleharmonium".
+mit:Theremin
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Theremin".
+mit:Programming
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Programming".
+mit:Vocoder
+   a skos:Concept; skos:inScheme ins:Musical_instruments; skos:prefLabel "Vocoder".
+mit:Wavedrum
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Wavedrum".
+mit:Other_instruments
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:narrower
+        mit:Bull-roarer,
+        <http://purl.org/ontology/mo/mit#Glass_(H)armonica>,
+        mit:Hardart,
+        mit:Kazoo,
+        mit:Lasso_d_amore,
+        mit:Turntables,
+        mit:Vacuum_cleaner;
+    skos:prefLabel
+       "Other instruments".
+mit:Bull-roarer
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Bull-roarer".
+mit:Turntables
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Turntables".
+mit:Hardart
+   a skos:Concept; skos:inScheme ins:Musical_instruments; skos:prefLabel "Hardart".
+mit:Lasso_d_amore
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Lasso d'amore".
+mit:Kazoo
+   a skos:Concept; skos:inScheme ins:Musical_instruments; skos:prefLabel "Kazoo".
+<http://purl.org/ontology/mo/mit#Glass_(H)armonica>
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Glass (H)armonica".
+mit:Vacuum_cleaner
+    a    skos:Concept;
+    skos:inScheme
+       ins:Musical_instruments;
+    skos:prefLabel
+       "Vacuum cleaner".
